@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mark_delivery_app/app/pages/splash/splash_page.dart';
 
 class DeliveryApp extends StatelessWidget {
   const DeliveryApp({super.key});
@@ -8,7 +9,7 @@ class DeliveryApp extends StatelessWidget {
     return MaterialApp(
       title: 'Delivery',
       routes: {
-        '/': (context) => Container(),
+        '/': (context) => const SplashPage(),
       },
     );
   }
