@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class AppStyle {
   static AppStyle? _instance;
   AppStyle._();
@@ -6,4 +8,10 @@ class AppStyle {
     _instance ??= AppStyle._();
     return _instance!;
   }
+
+  ButtonStyle get primaryButton => ElevatedButton.styleFrom(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(7),
+        ),
+      );
 }
