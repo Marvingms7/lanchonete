@@ -6,7 +6,10 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: ThemeData(scaffoldBackgroundColor: Colors.white),
+      data: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: const AppBarTheme(backgroundColor: Colors.white),
+      ),
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Splash'),
