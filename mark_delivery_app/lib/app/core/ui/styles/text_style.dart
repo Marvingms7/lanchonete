@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 class TextStyle {
   static TextStyle? _instance;
   // Avoid self isntance
