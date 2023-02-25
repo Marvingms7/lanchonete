@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mark_delivery_app/app/core/ui/styles/colors_app.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -7,14 +8,17 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Theme(
       data: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.white,
-          elevation: 0,
-          centerTitle: true,
-          iconTheme: IconThemeData(color: Colors.white),
-        ),
-      ),
+          scaffoldBackgroundColor: Colors.white,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.white,
+            elevation: 0,
+            centerTitle: true,
+            iconTheme: IconThemeData(
+              color: Colors.black,
+            ),
+          ),
+          primaryColor: ColorsApp.i.primary,
+          colorScheme: ColorScheme.fromSeed(seedColor: ColorsApp.i.primary)),
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Splash'),
