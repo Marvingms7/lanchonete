@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mark_delivery_app/app/core/ui/styles/colors_app.dart';
 
 class AppStyle {
   static AppStyle? _instance;
@@ -13,5 +14,6 @@ class AppStyle {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(7),
         ),
+        backgroundColor: ColorsApp.i.primary,
       );
 }
