@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 
 class TextStyles {
-  static TextStyle? _instance;
+  static TextStyles? _instance;
   // Avoid self isntance
   TextStyles._();
-  static TextStyle get i {
-    _instance ??= TextStyles._() as TextStyle?;
+  static TextStyles get i {
+    _instance ??= TextStyles._();
     return _instance!;
   }
 

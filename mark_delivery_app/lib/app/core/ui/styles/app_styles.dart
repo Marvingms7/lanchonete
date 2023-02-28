@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:mark_delivery_app/app/core/ui/styles/colors_app.dart';
+import 'package:mark_delivery_app/app/core/ui/styles/text_style.dart';
 
-class AppStyle {
-  static AppStyle? _instance;
-  AppStyle._();
+class AppStyles {
+  static AppStyles? _instance;
+  AppStyles._();
 
-  static AppStyle get i {
-    _instance ??= AppStyle._();
+  static AppStyles get i {
+    _instance ??= AppStyles._();
     return _instance!;
   }
 
@@ -15,5 +16,5 @@ class AppStyle {
         borderRadius: BorderRadius.circular(7),
       ),
       backgroundColor: ColorsApp.i.primary,
-      textStyle: const TextStyle());
+      textStyle: TextStyles.i.textBold);
 }
