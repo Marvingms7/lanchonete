@@ -18,3 +18,7 @@ class AppStyles {
       backgroundColor: ColorsApp.i.primary,
       textStyle: TextStyles.i.textButtonLabel);
 }
+
+extension AppStyleExtension on BuildContext {
+  AppStyles get appStyles => AppStyles.i;
+}
