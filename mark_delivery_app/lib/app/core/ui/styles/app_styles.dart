@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mark_delivery_app/app/core/ui/styles/colors_app.dart';
-import 'package:mark_delivery_app/app/core/ui/styles/text_style.dart';
+import 'package:mark_delivery_app/app/core/ui/styles/text_styles.dart';
 
 class AppStyles {
   static AppStyles? _instance;

@@ -25,7 +25,11 @@ class SplashPage extends StatelessWidget {
             secondary: ColorsApp.i.secundary,
           ),
           elevatedButtonTheme:
-              ElevatedButtonThemeData(style: AppStyles.i.primaryButton)),
+              ElevatedButtonThemeData(style: AppStyles.i.primaryButton),
+          inputDecorationTheme: const InputDecorationTheme(
+            fillColor: Colors.white,
+            filled: true,
+          )),
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Splash'),
@@ -33,7 +37,8 @@ class SplashPage extends StatelessWidget {
         body: Column(
           children: [
             Container(),
-            ElevatedButton(onPressed: () {}, child: const Text('teste'))
+            ElevatedButton(onPressed: () {}, child: const Text('teste')),
+            TextFormField()
           ],
         ),
       ),
