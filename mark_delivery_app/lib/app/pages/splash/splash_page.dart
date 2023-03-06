@@ -9,27 +9,28 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Theme(
       data: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
-          appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.white,
-            elevation: 0,
-            centerTitle: true,
-            iconTheme: IconThemeData(
-              color: Colors.black,
-            ),
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          centerTitle: true,
+          iconTheme: IconThemeData(
+            color: Colors.black,
           ),
-          primaryColor: ColorsApp.i.primary,
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: ColorsApp.i.primary,
-            primary: ColorsApp.i.primary,
-            secondary: ColorsApp.i.secundary,
-          ),
-          elevatedButtonTheme:
-              ElevatedButtonThemeData(style: AppStyles.i.primaryButton),
-          inputDecorationTheme: const InputDecorationTheme(
-            fillColor: Colors.white,
-            filled: true,
-          )),
+        ),
+        primaryColor: ColorsApp.i.primary,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: ColorsApp.i.primary,
+          primary: ColorsApp.i.primary,
+          secondary: ColorsApp.i.secundary,
+        ),
+        elevatedButtonTheme:
+            ElevatedButtonThemeData(style: AppStyles.i.primaryButton),
+        inputDecorationTheme: const InputDecorationTheme(
+          fillColor: Colors.white,
+          filled: true,
+        ),
+      ),
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Splash'),
