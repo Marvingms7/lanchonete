@@ -5,18 +5,23 @@ class DeliveryButton extends StatelessWidget {
   final String label;
   final double? width;
   final double? height;
-  const DeliveryButton(
-      {super.key,
-      required this.label,
-      required this.onPressed,
-      required this.width,
-      required this.height});
+  const DeliveryButton({
+    super.key,
+    required this.label,
+    required this.onPressed,
+    this.width,
+    this.height = 50,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      child: Text(label),
+    return SizedBox(
+      width: width,
+      height: height,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        child: Text(label),
+      ),
     );
   }
 }

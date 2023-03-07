@@ -13,8 +13,11 @@ class SplashPage extends StatelessWidget {
       body: Column(
         children: [
           Container(),
-          const DeliveryButton(
+          DeliveryButton(
+            width: 200,
+            height: 200,
             label: 'teste label',
+            onPressed: () {},
           ),
           TextFormField(
             decoration: const InputDecoration(labelText: 'text'),
