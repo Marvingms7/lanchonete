@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mark_delivery_app/app/core/ui/styles/app_styles.dart';
-import 'package:mark_delivery_app/app/core/ui/styles/colors_app.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -15,7 +13,9 @@ class SplashPage extends StatelessWidget {
         children: [
           Container(),
           ElevatedButton(onPressed: () {}, child: const Text('teste')),
-          TextFormField()
+          TextFormField(
+            decoration: const InputDecoration(labelText: 'text'),
+          )
         ],
       ),
     );
