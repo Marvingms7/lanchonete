@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mark_delivery_app/app/core/ui/widgets/delivery_button.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -12,7 +13,9 @@ class SplashPage extends StatelessWidget {
       body: Column(
         children: [
           Container(),
-          ElevatedButton(onPressed: () {}, child: const Text('teste')),
+          const DeliveryButton(
+            label: 'teste label',
+          ),
           TextFormField(
             decoration: const InputDecoration(labelText: 'text'),
           )
