@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../styles/app_styles.dart';
 import '../styles/colors_app.dart';
+import '../styles/text_styles.dart';
 
 class ThemeConfig {
   ThemeConfig._();
@@ -36,6 +37,8 @@ class ThemeConfig {
       border: _defautInputBorder,
       enabledBorder: _defautInputBorder,
       focusedBorder: _defautInputBorder,
+      labelStyle: TextStyles.i.textRegular.copyWith(color: Colors.black),
+      errorStyle: TextStyles.i.textRegular.copyWith(color: Colors.red),
     ),
   );
 }
