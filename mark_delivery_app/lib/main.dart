@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
+import 'app/core/config/env/env.dart';
 import 'app/delivery_app.dart';
 
-void main() {
+Future<void> main() async {
+  await Env.i.load();
   runApp(const DeliveryApp());
 }
