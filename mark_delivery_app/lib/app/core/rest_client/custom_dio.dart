@@ -12,4 +12,11 @@ class CustomDio extends DioForNative {
     interceptors.add(
         LogInterceptor(request: true, requestBody: true, requestHeader: true));
   }
+  CustomDio auth() {
+    return this;
+  }
+
+  CustomDio anauth() {
+    return this;
+  }
 }
