@@ -11,10 +11,26 @@ class SplashPage extends StatelessWidget {
         color: const Color(0XFF140E0E),
         child: Stack(
           children: [
-            SizedBox(
-              width: context.screenWidth,
-              child: Image.asset('assets/images/lanche.png'),
-            )
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: SizedBox(
+                width: context.screenWidth,
+                child: Image.asset(
+                  'assets/images/lanche.png',
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Center(
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.3,
+                  ),
+                  Image.asset('assets/images/logo.png'),
+                ],
+              ),
+            ),
           ],
         ),
       ),
