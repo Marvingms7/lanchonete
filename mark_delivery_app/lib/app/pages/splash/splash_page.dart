@@ -10,32 +10,9 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Splash'),
-      ),
-      body: Column(
-        children: [
-          Container(),
-          DeliveryButton(
-            width: 200,
-            height: 200,
-            label: Env.i['backend_base_url'] ?? '',
-            onPressed: () {},
-          ),
-          Text(
-            MediaQuery.of(context).size.width.toString(),
-          ),
-          Text(
-            context.screenWidht.toString(),
-          ),
-          Container(
-            color: Colors.red,
-          ),
-          TextFormField(
-            decoration: const InputDecoration(labelText: 'text'),
-          )
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Splash'),
+        ),
+        body: Container());
   }
 }
